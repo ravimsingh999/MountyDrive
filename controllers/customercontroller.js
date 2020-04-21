@@ -78,6 +78,12 @@ function handleValidationError(err, body) {
             case 'c_email':
                 body['c_emailError'] = err.errors[field].message;
                 break;
+             case 'c_mobnum':
+                body['c_mobnumError'] = err.errors[field].message;
+                break;
+             case 'c_address':
+                body['c_addressError'] = err.errors[field].message;
+                break;   
             default:
                 break;
         }
